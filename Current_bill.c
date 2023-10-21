@@ -1,34 +1,35 @@
 #include<stdio.h>
 int main()
 {
-    int units;
-    float unitcost,tbill;
-    scanf("%d",&units);
-    if(units<200)
+    int unit;
+    float unitcost;
+    scanf("%d",&unit);
+    if(unit<=199) 
     {
         unitcost=1.20;
     }
-    else if(units>=200 && units<400)
+    else if(unit>=200 && unit<400)
     {
         unitcost=1.50;
     }
-    else if(units>=400 && units<600)
+    else if(unit>=400 && unit<600)
     {
         unitcost=1.80;
     }
-    else 
+    else
     {
         unitcost=2.00;
     }
-    float bill=units*unitcost;      //800*2.00=1600
+    float bill,tbill;
+    bill=unit*unitcost;
     if(bill>400)
     {
         tbill=bill+(bill*0.15);
     }
-    else 
+    else
     {
         tbill=bill+100;
     }
+        
     printf("%.2f",tbill);
-    
 }
