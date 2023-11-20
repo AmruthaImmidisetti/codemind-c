@@ -1,12 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int d,w,y;
-    scanf("%d",&d);
-    y=d/365;
-    w=(d%365)/7;
+    int n,h,r,w;
+    scanf("%d",&n);
+    h=n/365;
+    r=n%365;
+    w=r/7;
     printf("%d
-%d",y,w);
-    
+%d
+",h,w);
     
 }
