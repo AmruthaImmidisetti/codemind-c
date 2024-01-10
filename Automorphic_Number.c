@@ -2,17 +2,17 @@
 #include<math.h>
 int main()
 {
-    int n,c=0,sq,a;
+    int i,n,c=0;
     scanf("%d",&n);
     int t=n;
-    sq=n*n;
+    int sq=n*n;
     while(n!=0)
     {
         c++;
-        n=n/10;
+        n/=10;
     }
     int k=pow(10,c);
-    a=sq%k;
-    if(a==t) printf("Automorphic Number");
-    else     printf("Not an Automorphic Number");
+    int r=sq%k;
+    if(r==t)        printf("Automorphic Number");
+    else            printf("Not an Automorphic Number");
 }
